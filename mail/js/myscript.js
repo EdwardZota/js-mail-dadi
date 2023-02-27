@@ -2,15 +2,16 @@ const elencoEmail =['pippo@gmail.com','pluto@gmail.com','topolino@gmail.com','pa
 
 const email = prompt('Inserisci la tua e-mail');
 
+let login = 'false';
+
 for (let i = 0; i < elencoEmail.length; i++){
-    if(email === elencoEmail[i]){
-        console.log('Login effettuato');
-    }else {
-        console.log('email sbagliata')
+    if(email == elencoEmail[i]){
+        login ='true';
     }
 }
 
-
-
-
-
+if (login == 'true') {
+    console.log('login effettuato');
+} else{
+    console.log('email errata');
+}
